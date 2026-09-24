@@ -4,13 +4,15 @@ public class PlanoContas {
     int id;
     String descricao;
     int id_grupo;
-    int tipo_plano_contas;
+    int tipo_planocontas;
+    boolean ativo;
 
     //Construindo as informações
-    public PlanoContas(int id, String descricao, int id_grupo, int tipo_plano_contas) {
+    public PlanoContas(int id, String descricao, int id_grupo, int tipo_planocontas, boolean ativo) {
         this.id = id;
         this.descricao = descricao;
         this.id_grupo = id_grupo;
-        this.tipo_plano_contas = tipo_plano_contas;
+        this.tipo_planocontas = tipo_planocontas;
+        this.ativo = ativo;
     }
 }
