@@ -1,18 +1,15 @@
 public class PlanoContas {
 
-    //Determinando tipo de dados
     int id;
     String descricao;
     int id_grupo;
     int tipo_planocontas;
     boolean ativo;
 
-    //Construindo as informações
-    public PlanoContas(int id, String descricao, int id_grupo, int tipo_planocontas, boolean ativo) {
-        this.id = id;
+    public PlanoContas(String descricao, int id_grupo, int tipo_planocontas) {
         this.descricao = descricao;
         this.id_grupo = id_grupo;
         this.tipo_planocontas = tipo_planocontas;
-        this.ativo = ativo;
+        this.ativo = true;
     }
 }

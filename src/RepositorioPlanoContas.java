@@ -3,16 +3,15 @@ import java.util.List;
 
 public class RepositorioPlanoContas {
 
-    //Cria a lista
+    private int proximoId = 1;
     private List<PlanoContas> tabelaPlanoContas = new ArrayList<>();
 
-    //Adiciona cadastro
     public void salvar(PlanoContas planoContas){
+        planoContas.id = proximoId;
+        proximoId++;
         tabelaPlanoContas.add(planoContas);
-
     }
 
-    //Consulta cadastro
     public List<PlanoContas> listarTodas(){
         return tabelaPlanoContas;
     }
